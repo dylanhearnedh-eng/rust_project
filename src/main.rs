@@ -1,5 +1,10 @@
+//Example 1
+//How to print simple text: 
+// fn main() { //main is important, can be changed, same with fn
+// println!("Hello World!");
+// }
 
-
+//Example 2
 // fn main() {  //main is essential here
 //     let x = 4;
 //     println!("x is: {}", x);
@@ -11,19 +16,9 @@
 //     println!("x is: {}", x);
 // }
 
-//ctrl / comments out a block
-// fn main() {
-//     const SECONDS_IN_MINUTES: u32 = 60;
-//     println!("{}", SECONDS_IN_MINUTES);
-// }
+//Example 3 
 
-/* hello all
-this is how to do 
-block comments */
-
-// Annotated Basic Rust Example: Factorial Calculation 
-
-// Define a function to calculate the factorial of a number.
+//Define a function to calculate the factorial of a number.
 fn fact(n: u64) -> u64 {
     // Base case: If n is 0 or 1, the factorial is 1.
     if n == 0 || n == 1 {
