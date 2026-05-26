@@ -51,11 +51,30 @@
 //Example 4
 // how do constants work
 
-fn main() {
-    const MONTHS_IN_A_YEAR: u32 = 12; //const makes this immutable 
-    //const MONTHS_IN_A_YEAR: u32 = 52; this will fail as a const cannot be changes
-    println!("There are {} months in a year", MONTHS_IN_A_YEAR)
-}
+// fn main() {
+//     const MONTHS_IN_A_YEAR: u32 = 12; //const makes this immutable 
+//     //const MONTHS_IN_A_YEAR: u32 = 52; this will fail as a const cannot be changes
+//     println!("There are {} months in a year", MONTHS_IN_A_YEAR);
+// }
 
+//Example 5
+// tuples and things like that
+
+// fn main() { //This is how tuples look and can be printed easily
+//     let mut testtuple: (i32, char, bool) = (32,'s',false); //mut works the same as before
+//     println!("The first item in my tuple {}, third item in my tuple {}, and second item in my tuple {}",
+//     testtuple.0, testtuple.2, testtuple.1);
+//     println!("my whole tuple is ({}, {}, {})", testtuple.0, testtuple.1, testtuple.2);
+//     testtuple.0 = 45; //alter at the postion you want, same rules apply as before
+//     println!("position 0 in tuple is now {}", testtuple.0);
+// }
+
+//Example 6
+//Arrays
+
+fn main(){ //array only contains values of the same type
+    let array = [33,5,76,19,0,22]; //[] brackets for array, must have the exact number of values defined
+    println!("check out position 3 and 2 in my array: pos 3 = {}, pos 2 = {}", array[3], array[2]) //array position in [] brackets
+}
 
 
