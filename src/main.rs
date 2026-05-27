@@ -17,7 +17,7 @@
 //     let mut y = 2; //mut makes the variable mutable, still cannot alter type
 //     y = y + 6; //no need for let to rewrite the variable
 //     println!("y is: {}", y);
-//     { //curly braces within curly braces creates an inner step
+//     { //curly braces within curly braces creates an inner step this is shadowing
 //         let y = "changes in this inner layer do not effect the variable outside";
 //         println!("y is: {}", y); //prints the inner y
 //     }
@@ -72,9 +72,19 @@
 //Example 6
 //Arrays
 
-fn main(){ //array only contains values of the same type
-    let array = [33,5,76,19,0,22]; //[] brackets for array, must have the exact number of values defined
-    println!("check out position 3 and 2 in my array: pos 3 = {}, pos 2 = {}", array[3], array[2]) //array position in [] brackets
+// fn main(){ //array only contains values of the same type
+//     let array = [33,5,76,19,0,22]; //[] brackets for array, must have the exact number of values defined
+//     println!("check out position 3 and 2 in my array: pos 3 = {}, pos 2 = {}", array[3], array[2]) //array position in [] brackets
+// }
+
+//crates and standard library
+
+use std::io;
+
+fn main(){
+    println!("ENTER A MESSAGE"); //call to action
+    let mut input = String::new(); //creates user input that is mutable
+
+    io::stdin().read_line(&mut input).expect("failed to read line"); //collects the input + error handling
+    println!("new input {}", input); //prints the input
 }
-
-
