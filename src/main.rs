@@ -77,14 +77,77 @@
 //     println!("check out position 3 and 2 in my array: pos 3 = {}, pos 2 = {}", array[3], array[2]) //array position in [] brackets
 // }
 
+//Example 7
 //crates and standard library
 
-use std::io;
+// use std::io;
+
+// fn main(){
+//     println!("ENTER A MESSAGE"); //call to action
+//     let mut input = String::new(); //creates user input that is mutable
+
+//     io::stdin().read_line(&mut input).expect("failed to read line"); //collects the input + error handling
+//     println!("new input {}", input); //prints the input
+// }
+
+
+//Example 8
+//arithmetic and type conversion
+//numbers need to be the exact same type to do arithmetic
+
+// fn main() {
+//     let x = 100 as i8; //both numbers are set as different types
+//     let y = 50 as i32;
+
+//     let z = x / y as i8; //here they are converted together to the same type
+//     let a = x as i64  * y as i64; //each number needs to be converted
+//     println!("{}", z);
+//     println!("{}", a)
+// }
+
+//number input
+// use std::io;
+
+// fn main(){
+//     let mut input = String::new(); //similar to the previous input commands
+//     io::stdin().read_line(&mut input).expect("read line");
+
+//     let int_input: i64 = input.trim().parse().unwrap(); //trims the message, only accepts numbers
+
+//     println!("{}", int_input + 5);
+// }
+
+//Example 9
+//conditions
+
+// fn main(){ //cond creates a condition True/False
+//     let cond = 2 < 3;
+//     let cond2 = false || !cond;
+//     println!("{}", cond2);
+// }
+//&& is and
+//|| is or
+// ! is not
+
+//if else statements
 
 fn main(){
-    println!("ENTER A MESSAGE"); //call to action
-    let mut input = String::new(); //creates user input that is mutable
+    let direction = "Down";
 
-    io::stdin().read_line(&mut input).expect("failed to read line"); //collects the input + error handling
-    println!("new input {}", input); //prints the input
+    if direction == "North" {
+        println!("you walked north");
+        //another if/else look would start here
+    } else if direction == "East"{
+        println!("you walked east");
+    } else if direction == "South" {
+        println!("you walked south");
+    } else if direction == "West"{
+        println!("you walked west");
+    } else if direction == "Down" {
+        println!("you squatted down");
+    } else {
+        println!("no valid direction chosen");
+    }
 }
+
+
