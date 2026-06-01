@@ -129,25 +129,41 @@
 //|| is or
 // ! is not
 
-//if else statements
+//if else statements choose your won adverture test
+
+// fn main(){
+//     let direction = "Down";
+
+//     if direction == "North" {
+//         println!("you walked north");
+//         //another if/else look would start here
+//     } else if direction == "East"{
+//         println!("you walked east");
+//     } else if direction == "South" {
+//         println!("you walked south");
+//     } else if direction == "West"{
+//         println!("you walked west");
+//     } else if direction == "Down" {
+//         println!("you squatted down");
+//     } else {
+//         println!("no valid direction chosen");
+//     }
+// }
+
+//functions
 
 fn main(){
-    let direction = "Down";
+    println!("hello");
+    test(); //calls the test function
+    add_num(7, 22);
+}
 
-    if direction == "North" {
-        println!("you walked north");
-        //another if/else look would start here
-    } else if direction == "East"{
-        println!("you walked east");
-    } else if direction == "South" {
-        println!("you walked south");
-    } else if direction == "West"{
-        println!("you walked west");
-    } else if direction == "Down" {
-        println!("you squatted down");
-    } else {
-        println!("no valid direction chosen");
-    }
+fn test() { //creates a function called test that just prints
+    println!("test has been called")
+}
+
+fn add_num(x: i32, y: i32) { //creates an addition function, can work with any symbol
+    println!("the sum is: {}", x + y)
 }
 
 
