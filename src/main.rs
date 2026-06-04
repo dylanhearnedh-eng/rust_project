@@ -156,6 +156,9 @@ fn main(){
     println!("hello");
     test(); //calls the test function
     add_num(7, 22);
+    sub_num(7, 22);
+    mult_num(7, 22);
+    div_num(21, 21);
 }
 
 fn test() { //creates a function called test that just prints
@@ -164,6 +167,18 @@ fn test() { //creates a function called test that just prints
 
 fn add_num(x: i32, y: i32) { //creates an addition function, can work with any symbol
     println!("the sum is: {}", x + y)
+}
+
+fn sub_num(x: i32, y: i32) { //creates an subtract function
+    println!("the sum is: {}", x - y)
+}
+
+fn mult_num(x: i32, y: i32) { //creates an multiplication function
+    println!("the sum is: {}", x * y)
+}
+
+fn div_num(x: i32, y: i32) { //creates an division function
+    println!("the sum is: {}", x / y)
 }
 
 
