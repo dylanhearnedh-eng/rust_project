@@ -181,4 +181,3 @@ fn div_num(x: i32, y: i32) { //creates an division function
     println!("the sum is: {}", x / y)
 }
 
-
