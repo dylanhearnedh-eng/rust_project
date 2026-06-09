@@ -1,3 +1,5 @@
+//This is a training document for learning RUST, there are a number of interactive lessons
+
 //Example 1
 //How to print simple text: 
 // fn main() { //main is important, can be changed, same with fn
